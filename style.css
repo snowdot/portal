@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+}
+
+.container {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+#frame {
+    width: 100vw;
+    height: 100vh;
+}
+
+#layer {
+    background-color: rgb(25, 25, 25);
+    width: 200vw;
+    height: 200vh;
+    mask: radial-gradient(circle farthest-side, transparent 0px, #ffffff 140px);
+    -webkit-mask: radial-gradient(circle farthest-side, transparent 0px, #ffffff 140px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+#light {
+    background-image: radial-gradient(transparent 62%, rgba(78, 134, 238, 0) 100%);
+    border-radius: 50%;
+    min-width: 280px;
+    min-height: 280px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
